@@ -1,13 +1,14 @@
 :root{
 --pink: hsl(322, 100%, 66%);
 --light-pink: hsl(321, 100%, 78%);
---light-red: hsl(0, 100%, 63%);
+--light-red: hsl(0,  %, 63%);
 --very-dark-cyan: hsl(192, 100%, 9%);
 --very-pale-blue: hsl(0, 0%, 97%);
---white: hsl(0, 2%, 98%);
+--white: hsl(0, 0%, 100%);
+--grow-together-bc:rgb(246, 251, 255)
 }
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: rgb(62, 82, 163); }
 *{
     margin: 0px;
     padding: 0px;
@@ -17,13 +18,13 @@ body{
     background-color: var(--white);
     width: 375px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    back
+    text-align: center;
 }
 
 /* ---------globals------------ */
 img{
     width: 100%;
+    display: block;
 }
 h1{
     font-size: 31px;
@@ -32,43 +33,129 @@ h1, h2{
     color: var(--very-dark-cyan);
     font-family: 'Poppins', sans-serif;
     letter-spacing: -2px;
-    padding:30px 4px
+    padding:100px 30px 30px 30px;
 }
 p{
     letter-spacing: -1px;
-    margin: 10px auto 140px auto;
 }
-button{
-    width: 70%;
-    height: 50px;
+.main-btn{
     background-color: var(--pink);
-    color: white;
+    padding: 10px 40px;
     border-radius: 50px;
-    border: 1px solid var(--pink);
+    border: none;
+    color: var(--white);
+    box-shadow: 0px 4px 15px 1px grey;
 }
 
 /*-------- End globals--------- */
-.header{
+header{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 100px;
+    padding: 30px;
 
 }
 .header img{
-    width: 50%;
+    width: 100%;
+    height: 15px;
+    width: 80px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    
+    
+}
+nav button{
+    width: 80px;
+    padding: 5PX;
+    font-size: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--pink);
+    color: var(--pink);
+    background-color: var(--white);
 }
 main{
     text-align: center;
-    padding: 30px;
+    /* padding: 30px; */
 }
-.grow-together-img{
-    background-image: url(/images/bg-section-top-mobile-1.svg);
-    background-size:cover;
-    /* background-position: center; */
+.hero{
+    margin-bottom: 100px;
+
+}
+.hero p{
+    margin-bottom: 40px;
+}
+.community .form::before{
+    content: url(./images/icon-communities.svg);
+    display: block;
+}
+.community .message::before{
+    content: url(./images/icon-messages.svg);
     display: block;
 
 }
-.grow-together{
-    background-image: url(/images/bg-section-bottom-mobile-1.svg);
-    background-size:cover;
+.grow-together-wrapper{
+    background-color: var(--grow-together-bc);
+    padding: 0px 30px;
 }
+.grow-together-wrapper p{
+    margin-bottom: 0px;
+    padding: 0px 0px 50px 0px;
+}
+.grow-together-wrapper img{
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+.grow-together img{
+    display: block;
+}
+
+.conversation{
+    margin-top: 140px;
+    padding: 10px 30px;
+}
+.conversation img{
+    width: 80%;
+    margin: auto;
+}
+.users-wrapper{
+    padding: 30px;
+    background-color: var(--grow-together-bc);
+}
+.users img{
+    display: block;
+}
+.users p{
+    padding-bottom:100px ;
+}
+footer{
+    margin-top: 250px;
+    color: var(--white);
+    text-align: left;
+    letter-spacing:.1px;
+    line-height: 25px;
+    
+}
+.footer-wrapper{
+    background-color: rgb(0, 37, 46);
+    padding: 50px 30px 20px 30px;
+}
+.hidden-for-mobile{
+    display: none;
+}
+.newsletter{
+    
+}
+.newsletter h3{
+    margin-bottom: 20px;
+}
+.newsletter p{
+}
+footer .
+
+
+
