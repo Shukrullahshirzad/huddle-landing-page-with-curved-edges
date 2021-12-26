@@ -5,7 +5,9 @@
 --very-dark-cyan: hsl(192, 100%, 9%);
 --very-pale-blue: hsl(0, 0%, 97%);
 --white: hsl(0, 0%, 100%);
---grow-together-bc:rgb(246, 251, 255)
+--grow-together-bc:rgb(246, 251, 255);
+--grey: hsl(0, 0%, 50%);
+--black: rgb(0, 0, 0);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: rgb(62, 82, 163); }
@@ -19,24 +21,27 @@ body{
     width: 375px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    font-size: 15px;
+    
 }
 
 /* ---------globals------------ */
 img{
     width: 100%;
     display: block;
-}
+ }
 h1{
-    font-size: 31px;
+    font-size: 25px;
 }
 h1, h2{
     color: var(--very-dark-cyan);
     font-family: 'Poppins', sans-serif;
-    letter-spacing: -2px;
-    padding:100px 30px 30px 30px;
+
+    padding-top:100px;
+    padding-bottom: 30px;
 }
 p{
-    letter-spacing: -1px;
+    
 }
 .main-btn{
     background-color: var(--pink);
@@ -82,21 +87,45 @@ main{
     /* padding: 30px; */
 }
 .hero{
-    margin-bottom: 100px;
-
+    margin-bottom: 30px;
+    padding: 30px;
 }
 .hero p{
     margin-bottom: 40px;
 }
-.community .form::before{
-    content: url(./images/icon-communities.svg);
-    display: block;
+.community img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 110px;
 }
-.community .message::before{
-    content: url(./images/icon-messages.svg);
+.community h2{
+    padding: 0px;
+}
+.community .message{
+    position: relative;
+}
+.form img, .message img{
+    width: 25px;
     display: block;
+    margin: 0;
+    /* margin-left: 120px; */
+    position: absolute;
+    left: 120px;
+    bottom: 80px;
+}
+.form span, .message span{
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--black);
+}
+.form, .message{
+    color: var(--grey);
+    position: relative;
+}
+.message{
+    margin-top:80px ;
+}
 
-}
 .grow-together-wrapper{
     background-color: var(--grow-together-bc);
     padding: 0px 30px;
@@ -110,9 +139,7 @@ main{
     width: 80%;
     margin: auto;
 }
-.grow-together img{
-    display: block;
-}
+
 
 .conversation{
     margin-top: 140px;
@@ -125,9 +152,6 @@ main{
 .users-wrapper{
     padding: 30px;
     background-color: var(--grow-together-bc);
-}
-.users img{
-    display: block;
 }
 .users p{
     padding-bottom:100px ;
@@ -144,18 +168,78 @@ footer{
     background-color: rgb(0, 37, 46);
     padding: 50px 30px 20px 30px;
 }
-.hidden-for-mobile{
-    display: none;
-}
-.newsletter{
-    
-}
 .newsletter h3{
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
-.newsletter p{
-}
-footer .
+.newsletter form input{
+    display: block;
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
 
+}
+form{position: relative;}
+.newsletter form button{
+    font-size: 17px;
+    font-weight: 500;
+    background-color: var(--pink);
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    margin-top: 15px;
+    position: absolute ;
+    right: 0px;
+}
+address ul {
+list-style-type: none;
+}
+address .phone-email img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+address .social-media{
+    display: flex;
+    margin: 20px 0px;
+}
+.social-media li{
+    margin-right: 20px;
+    
+}
+.social-media li i{
+    size: 5x;
+}
+footer span{
+    background-image: url(./images/logo.svg);
+    width: 200px;
+    height: 40px;
+    text-align: right;
+    display: block;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    margin: 150px 10px 10px 0px;
+}
+.svg-style{
+    fill: white;
+}
+
+/* ----------desktop design--------------- */
+@media screen and (min-width: 650px) {
+    body{
+        box-sizing: border-box;
+        background-color: var(--white);
+        width: auto;
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 16px;
+        
+    }
+}
 
 
