@@ -123,6 +123,14 @@ main{
     margin-top:80px ;
 }
 
+.grow-together::before{
+    content: url(./images/bg-section-top-mobile-1.svg);
+    
+}
+.grow-together::after{
+    content: url(./images/bg-section-bottom-mobile-1.svg);
+}
+
 .grow-together-wrapper{
     background-color: var(--grow-together-bc);
     padding: 0px 30px;
@@ -145,6 +153,13 @@ main{
 .conversation img{
     width: 80%;
     margin: auto;
+}
+.users::before{
+    content: url(./images/bg-section-top-mobile-2.svg);
+
+}
+.users::after{
+    content: url(./images/bg-section-bottom-mobile-2.svg);
 }
 .users-wrapper{
     padding: 30px;
@@ -308,7 +323,17 @@ h1, h2{
     .form{
         width: 160px;
     }
-    
+    .grow-together{
+        display: flex;
+    }
+    .grow-together::before{
+        content: url(./images/bg-section-top-desktop-1.svg);
+        z-index: -1;
+        
+    }
+    .grow-together::after{
+        content: url(./images/bg-section-bottom-desktop-1.svg);
+    }
     .grow-together-wrapper{
         background-color: var(--grow-together-bc);
         padding: 0px 30px;
@@ -332,6 +357,13 @@ h1, h2{
         width: 80%;
         margin: auto;
     }
+    .users::before{
+        content: url(./images/bg-section-top-desktop-2.svg);
+    
+    }
+    .users::after{
+        content: url(./images/bg-section-bottom-desktop-2.svg);
+    }
     .users-wrapper{
         padding: 30px;
         background-color: var(--grow-together-bc);
@@ -347,9 +379,20 @@ h1, h2{
         line-height: 25px;
         
     }
+    .footer-wrapper::before{
+        content: url(./images/bg-footer-top-desktop.svg);
+    }
     .footer-wrapper{
         background-color: rgb(0, 37, 46);
         padding: 50px 30px 20px 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .newsletter{
+        width: 400px;
+        margin-right: 50px;
     }
     .newsletter h3{
         margin-bottom: 20px;
@@ -364,7 +407,6 @@ h1, h2{
         border: none;
     
     }
-    form{position: relative;}
     .newsletter form button{
         font-size: 17px;
         font-weight: 500;
@@ -374,8 +416,11 @@ h1, h2{
         border: none;
         color: var(--white);
         margin-top: 15px;
-        position: absolute ;
-        right: 0px;
+        display: block;
+    }
+    address{
+        width: 350px;
+        margin-left: 50px;
     }
     address ul {
     list-style-type: none;
@@ -406,7 +451,7 @@ h1, h2{
         font-size: 40px;
         font-weight: 900;
         line-height: 40px;
-        margin: 150px 10px 10px 0px;
+        margin: 0px 10px 10px 0px;
     }
     
 }
