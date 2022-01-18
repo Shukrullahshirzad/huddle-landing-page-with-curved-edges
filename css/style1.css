@@ -1,0 +1,38 @@
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --light-pink: hsl(321, 100%, 78%);
+    --light-red: hsl(0,  %, 63%);
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(0, 0%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --grow-together-bc:rgb(246, 251, 255);
+    --grey: hsl(0, 0%, 50%);
+    --black: rgb(0, 0, 0);
+    }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: rgb(62, 82, 163); }
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--white);
+    width: 375px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    
+}
+img{
+    width: 100%;
+}
+/*----------- header section --------- */
+header{
+    padding: 30px 20px 120px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.header-logo{
+    width: 30%;
+}

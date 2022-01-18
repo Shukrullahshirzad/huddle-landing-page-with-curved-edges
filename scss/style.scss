@@ -1,0 +1,27 @@
+@import "variables";
+@import "globals";
+header{
+    padding: 30px 20px 120px 20px;
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 30%;
+    }
+    
+        button{
+            width: 80px;
+            padding: 5PX;
+            font-size: 10px;
+            border-radius: 50px;
+            border: 1px solid var(--pink);
+            color: var(--pink);
+            background-color: var(pink);}  
+    
+}
+.hero{
+    margin-bottom: 30px;
+    padding: 20px;
+    h1{
+        font-size: 30px;
+    }
+}
